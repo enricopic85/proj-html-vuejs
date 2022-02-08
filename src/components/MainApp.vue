@@ -1,10 +1,15 @@
 <template>
-    <div></div>
+    <div>
+         <jumbotron/>
+         <offered-services/>
+    </div>
 </template>
 
 <script>
+import Jumbotron from './Jumbotron.vue'
+import OfferedServices from './OfferedServices.vue'
 export default {
-    
+    components:{Jumbotron, OfferedServices}
 }
 </script>
 

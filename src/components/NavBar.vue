@@ -14,7 +14,7 @@
                     <img src="@/../public/img/en.png" alt="">
                 </div>
                 <p>ENGLISH</p>
-                <i class="fas fa-angle-down"></i>
+                <i @click="checked" class="fas fa-angle-down"></i>
                 <i class="far fa-user-circle"></i>
             </div>
             <div class="search">
@@ -28,8 +28,9 @@
 <script>
 export default {
     props:{
-        menu:Array
-    }
+        menu:Array,
+        languages:Array
+    },
 }
 </script>
 
@@ -55,7 +56,7 @@ export default {
             .language{
                 display: flex;
                 align-items: center;
-                border-right: 1px solid grey;
+                border-right: 1px solid $porcelain;
                 height: 80px;
                  p{
                 font-weight: 800;
@@ -64,6 +65,7 @@ export default {
             i{
                 padding-left: 5px;
                 padding-right: 20px;
+                cursor: pointer;
             }
             }
             .search{
@@ -84,7 +86,7 @@ export default {
             padding-left: 20px;
             li{
                 list-style: none;
-                padding-right: 15px;
+                padding-right: 30px;
                display: flex;
                align-items: self-end;
                color: $charade;
@@ -92,8 +94,9 @@ export default {
                font-weight: 600;
                i{
                    padding-left: 3px;
-                    color: $charade;
+                    color: $tuna;
                     font-size: 12px;
+                    line-height: inherit;
                }
             }
         }

@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <header-app :menu="menu"/>
+    <header-app 
+    :menu="menu"
+    :languages="languages"/>
     <main-app />
     <footer-app/>
   </div>
@@ -23,7 +25,19 @@ export default {
   },
   data(){
     return{
-      menu:['Home','Pages','Courses','Features','Blog','Shop']
+      menu:['Home','Pages','Courses','Features','Blog','Shop'],
+      languages:[
+        {
+          id:1,
+          img:'@/../public/img/fr.png',
+          nation:'FRANCE'
+        },
+        {
+          id:2,
+          img:'@/../public/img/de.png',
+          nation:'GERMANY'
+        },
+      ]
     }
   },
   
@@ -32,4 +46,5 @@ export default {
 
 <style lang="scss">
   @import './style/main.scss';
+  @import '@/../style/variables.scss';
 </style>

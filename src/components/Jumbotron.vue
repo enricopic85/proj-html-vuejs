@@ -7,20 +7,26 @@
             <h1 class="pb-15">BUSINESS</h1>
             <p>Whole-life business Coaching for committed</p>
             <p class="pb-15">entrepreneurs</p>
-            <div class="cta">
-                Get started today
-            </div>
+            <button-cta/>
         </div>
         <div class="business-man">
             <div class="coach">
                 <img src="@/../public/img/home-business-hero-avatar.png" alt="">
+            </div>
+            <div class="action">
+                <i class="fas fa-exclamation-triangle"></i>
+                <i class="fas fa-globe"></i>
+                <i class="fas fa-book"></i>
+                <i class="fas fa-shopping-cart"></i>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+import ButtonCta from './ButtonCta.vue'
 export default {
+  components: { ButtonCta },
     
 }
 </script>
@@ -36,23 +42,12 @@ export default {
         background-position: right;
         display: flex;
         align-items: center;
-        // justify-content: center;
+        position: relative;
         .started-today{
             padding-left: 300px;
             padding-right: 100px;
             h4{
                 color: $jungle-green;
-            }
-            .cta{
-                color: $white;
-                background-color: $jungle-green-v;
-                width: 150px;
-                height: 40px;
-                line-height: 40px;
-                font-size: 12px;
-                text-align: center;
-                border-radius: 2px;
-                cursor: pointer;
             }
         }
          .business-man{
@@ -64,6 +59,22 @@ export default {
                         width: 100%;
                     }
                 }
+                .action{
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: white;
+                    width: 25px;
+                    height: 130px;
+                    justify-content: center;
+                    gap: 10px;
+                    align-items: center;
+                    right: 0;
+                    bottom: 349px;
+                    border-radius: 2px;
+                    
+                }
+                
             }
     }
 </style>
