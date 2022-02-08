@@ -9,5 +9,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+@import '@/../style/variables.scss';
 </style>

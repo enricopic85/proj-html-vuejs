@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <header-app/>
-    <main-app/>
+    <header-app :menu="menu"/>
+    <main-app />
     <footer-app/>
   </div>
 </template>
@@ -20,7 +20,13 @@ export default {
     MainApp,
     FooterApp
    
-  }
+  },
+  data(){
+    return{
+      menu:['Home','Pages','Courses','Features','Blog','Shop']
+    }
+  },
+  
 }
 </script>
 
