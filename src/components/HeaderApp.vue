@@ -1,13 +1,15 @@
 <template>
     <div>
        <nav-bar :menu="menu"/>
+       <jumbotron/>
     </div>
 </template>
 
 <script>
+import Jumbotron from './Jumbotron.vue'
 import NavBar from './NavBar.vue'
 export default {
-  components: { NavBar },
+  components: { NavBar, Jumbotron },
   props:{
       menu:Array
   }

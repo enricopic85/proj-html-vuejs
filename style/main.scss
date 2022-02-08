@@ -1,6 +1,11 @@
 @import url('https://use.fontawesome.com/releases/v5.7.1/css/all.css');
+// @import '~bootstrap/scss/bootstrap.scss';
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.pb-15{
+    padding-bottom: 15px;
 }
