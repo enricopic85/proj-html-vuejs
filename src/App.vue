@@ -5,7 +5,7 @@
     :languages="languages"/>
     <main-app
     :cardsService="cardsService" />
-    <footer-app/>
+    <footer-app :listFooter="listFooter"/>
   </div>
 </template>
 
@@ -81,6 +81,32 @@ export default {
           text1:'Business Coaching often keep your focus',
           text2:'and develop you both in a professional',
           text3:'and personal way'
+        },
+      ],
+      listFooter:[
+        {
+          id:1,
+          title:'Explore',
+          link1:'Start here',
+          link2:'blog',
+          link3:'About us',
+          link4:''
+        },
+        {
+          id:2,
+          title:'',
+          link1:'Success story',
+          link2:'Courses',
+          link3:'Contact us',
+          link4:''
+        },
+        {
+          id:3,
+          title:'Information',
+          link1:'Membership',
+          link2:'Purchase guide',
+          link3:'Privacy policy',
+          link4:'Terms of service'
         },
       ]
     }
