@@ -1,15 +1,15 @@
 <template>
    <div class="card-service">
-      <h2 class="pb-15">One to One</h2>
-      <p>Getting the necessary clarity about the</p>
-      <p>current state to help you improve your</p>
-      <p>game</p>          
+      <h2 class="pb-15">{{cardService.title}}</h2>
+      <p>{{cardService.text1}}</p>
+      <p>{{cardService.text2}}</p>
+      <p>{{cardService.text3}}</p>          
     </div>
 </template>
 
 <script>
 export default {
-    
+    cardService:Object
 }
 </script>
 

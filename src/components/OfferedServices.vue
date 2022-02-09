@@ -7,12 +7,14 @@
             <h2 class="tac">coaching in the new age of digitalization</h2>
         </div>
         <div class="services ">
+            <card-service :cardService="cardService" 
+            v-for="cardService in cardsService"
+            :key="cardService.id"/>
+            <!-- <card-service/>
             <card-service/>
             <card-service/>
             <card-service/>
-            <card-service/>
-            <card-service/>
-            <card-service/>
+            <card-service/> -->
         </div>
             <div class="button-cta pb-5">
                 <div class="cta-learn-more">
@@ -27,7 +29,10 @@
 import ButtonCta from './ButtonCta.vue'
 import CardService from './CardService.vue'
 export default {
-    components:{ButtonCta , CardService}
+    components:{ButtonCta , CardService},
+    props:{
+        cardsService:Array
+    }
 }
 </script>
 
@@ -67,7 +72,6 @@ export default {
             padding-top: 50px;
             display: flex;
             flex-wrap: wrap;
-            width: 1500px;
             column-gap: 60px;
             row-gap: 50px;
             padding-bottom: 30px;

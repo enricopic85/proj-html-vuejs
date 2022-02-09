@@ -1,7 +1,7 @@
 <template>
     <nav>
         <div class="logo">
-            <img src="/img/dark-logo.png" alt="">
+            <img src="@/../public/img/dark-logo.png" alt="">
         </div>
         <ul>
             <li v-for="(list,i) in menu" :key="i">{{list}}
@@ -18,11 +18,12 @@
                 <i class="far fa-user-circle"></i>
             </div>
             <div class="modal-language" v-if="flag">
-                <div class="flag" v-for="language in languages" :key="language.id">
-                    <img :src="language.img" alt="">
+                <div class="language-card" v-for="language in languages" :key="language.id">
+                <div class="flag">
+                    <img :src=language.img alt="">
                 </div>
-                <span>{{language.nation}}</span>
-                <i class="fas fa-angle-down"></i>
+                <p>{{language.nation}}</p>
+            </div>
             </div>
             <div class="search">
                 <input type="text" placeholder="Search...">
@@ -72,8 +73,14 @@ export default {
             .modal-language{
                 display: flex;
                 position: absolute;
-                top:60px;
+                top:40px;
                 z-index: 1;
+                flex-direction: column;
+                .language-card{
+                     display: flex;
+                    align-items: center;
+                     padding-top: 20px;
+                }
                 .flag{
                     padding-right: 5px;
                 }
@@ -87,6 +94,7 @@ export default {
                 align-items: center;
                 border-right: 1px solid $porcelain;
                 height: 80px;
+                padding-bottom: 10px;
                 .flag{
                     padding-right: 5px;
                 }
