@@ -14,7 +14,7 @@
             <card-service/>
             <card-service/>
         </div>
-            <div class="button-cta ">
+            <div class="button-cta pb-5">
                 <div class="cta-learn-more">
                     Get started today
                 </div>
@@ -38,6 +38,7 @@ export default {
             display: flex;
             width: 100%;
             justify-content: center;
+            padding-bottom: 50px;
              .cta-learn-more{
                 color:$jungle-green-v ;
                 background-color:$white ;

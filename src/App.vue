@@ -29,12 +29,12 @@ export default {
       languages:[
         {
           id:1,
-          img:'@/../public/img/fr.png',
+          img:'/img/fr.png',
           nation:'FRANCE'
         },
         {
           id:2,
-          img:'@/../public/img/de.png',
+          img:'/img/de.png',
           nation:'GERMANY'
         },
       ]

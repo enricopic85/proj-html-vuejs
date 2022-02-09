@@ -11,7 +11,7 @@
         </div>
         <div class="business-man">
             <div class="coach">
-                <img src="@/../public/img/home-business-hero-avatar.png" alt="">
+                <img src="/img/home-business-hero-avatar.png" alt="">
             </div>
             <div class="action">
                 <i class="fas fa-exclamation-triangle"></i>

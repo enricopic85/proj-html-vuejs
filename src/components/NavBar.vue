@@ -1,7 +1,7 @@
 <template>
     <nav>
         <div class="logo">
-            <img src="@/../public/img/dark-logo.png" alt="">
+            <img src="/img/dark-logo.png" alt="">
         </div>
         <ul>
             <li v-for="(list,i) in menu" :key="i">{{list}}
@@ -11,11 +11,18 @@
         <div class="language-search">
             <div class="language">
                 <div class="flag">
-                    <img src="@/../public/img/en.png" alt="">
+                    <img src="/img/en.png" alt="">
                 </div>
                 <p>ENGLISH</p>
                 <i @click="checked" class="fas fa-angle-down"></i>
                 <i class="far fa-user-circle"></i>
+            </div>
+            <div class="modal-language" v-if="flag">
+                <div class="flag" v-for="language in languages" :key="language.id">
+                    <img :src="language.img" alt="">
+                </div>
+                <span>{{language.nation}}</span>
+                <i class="fas fa-angle-down"></i>
             </div>
             <div class="search">
                 <input type="text" placeholder="Search...">
@@ -29,8 +36,18 @@
 export default {
     props:{
         menu:Array,
-        languages:Array
+        languages:Array,
     },
+    data(){
+        return{
+            flag:false
+        }
+    },
+    methods:{
+        checked(){
+            this.flag=!this.flag
+        }
+    }
 }
 </script>
 
@@ -51,14 +68,29 @@ export default {
         }
         .language-search{
             display: flex;
-            
+            position: relative;
+            .modal-language{
+                display: flex;
+                position: absolute;
+                top:60px;
+                z-index: 1;
+                .flag{
+                    padding-right: 5px;
+                }
+                i{
+                    padding-left: 5px;
+                }
+            }
            
             .language{
                 display: flex;
                 align-items: center;
                 border-right: 1px solid $porcelain;
                 height: 80px;
-                 p{
+                .flag{
+                    padding-right: 5px;
+                }
+                 span{
                 font-weight: 800;
                 padding-left: 10px;
             }
