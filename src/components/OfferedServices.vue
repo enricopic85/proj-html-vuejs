@@ -12,7 +12,7 @@
             <p>{{cardService.text1}}</p>
             <p>{{cardService.text2}}</p>
             <p>{{cardService.text3}}</p>          
-        </div>
+            </div>
         </div>
             <div class="button-cta pb-5">
                 <div class="cta-learn-more">
@@ -58,16 +58,6 @@ export default {
                 margin-right: 50px;
             }
         }
-       
-        .dream{
-        //     .dreams{
-        //     padding-top: 50px;
-        //     color: $jungle-green;
-        //     text-align: center;
-        //     padding-bottom: 15px;
-        // }
-        }
-        
         .services{
             padding-top: 50px;
             display: flex;

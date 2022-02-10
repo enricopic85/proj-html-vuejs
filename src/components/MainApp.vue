@@ -1,11 +1,13 @@
 <template>
     <div>
          <jumbotron/>
-         <offered-services :cardsService="cardsService"/>
+         <offered-services 
+         :cardsService="cardsService"/>
          <program-coach/>
          <jumbotron-explore
          :jumboExplore="jumboExplore"/>
          <price-services/>
+         <youtube-video/>
     </div>
 </template>
 
@@ -15,8 +17,9 @@ import OfferedServices from './OfferedServices.vue'
 import ProgramCoach from './ProgramCoach.vue'
 import JumbotronExplore from './JumbotronExplore.vue'
 import PriceServices from './PriceServices.vue'
+import YoutubeVideo from './YoutubeVideo.vue'
 export default {
-    components:{Jumbotron, OfferedServices, ProgramCoach,JumbotronExplore,PriceServices},
+    components:{Jumbotron, OfferedServices, ProgramCoach,JumbotronExplore,PriceServices, YoutubeVideo},
     props:{
         cardsService:Array,
         jumboExplore:Array

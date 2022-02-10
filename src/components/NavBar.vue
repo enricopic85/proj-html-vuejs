@@ -1,7 +1,7 @@
 <template>
     <nav>
         <div class="logo">
-            <img src="@/../public/img/dark-logo.png" alt="">
+            <img src="/img/dark-logo.png" alt="">
         </div>
         <ul>
             <li v-for="(list,i) in menu" :key="i">{{list}}

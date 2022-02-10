@@ -22,5 +22,8 @@ export default {
                 text-align: center;
                 border-radius: 2px;
                 cursor: pointer;
+                &:hover{
+                    background-color: $klein-blue;
+                }
             }
 </style>
