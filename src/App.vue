@@ -4,7 +4,8 @@
     :menu="menu"
     :languages="languages"/>
     <main-app
-    :cardsService="cardsService" />
+    :cardsService="cardsService"
+    :jumboExplore="jumboExplore" />
     <footer-app :listFooter="listFooter"/>
   </div>
 </template>
@@ -109,7 +110,33 @@ export default {
           link4:'Terms of service'
         },
       ],
-     
+     jumboExplore:[
+       {
+         id:1,
+         img:'home-business-service-slide-01-480x298.jpg' ,
+         title:'Consultative training',
+         text1:'With a coach addressing multiple issues',
+         text2:'that are off balance, affecting your',
+         text3:'business in various unconsidered ways'
+       },
+        {
+         id:2,
+         img:'home-business-service-slide-02-480x298.jpg' ,
+         title:'Real Deal Coaching',
+         text1:'Bring an exceptionally powerful',
+         text2:'opportunity. Being able to accept, to work',
+         text3:'with that opportunity'
+       },
+        {
+         id:3,
+         img:'home-business-service-slide-03-480x298.jpg' ,
+         title:'Advisor Training Program',
+         text1:'Getting high quality, entrepreneur mindset',
+         text2:'driven online business coaching, is what is',
+         text3:'needed'
+       },
+
+     ]
     }
   },
   

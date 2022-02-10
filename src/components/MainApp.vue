@@ -3,7 +3,8 @@
          <jumbotron/>
          <offered-services :cardsService="cardsService"/>
          <program-coach/>
-         <jumbotron-explore/>
+         <jumbotron-explore
+         :jumboExplore="jumboExplore"/>
          <price-services/>
     </div>
 </template>
@@ -17,7 +18,8 @@ import PriceServices from './PriceServices.vue'
 export default {
     components:{Jumbotron, OfferedServices, ProgramCoach,JumbotronExplore,PriceServices},
     props:{
-        cardsService:Array
+        cardsService:Array,
+        jumboExplore:Array
     }
 }
 </script>

@@ -4,38 +4,14 @@
             <text-big-dream/>
             <help-you/>
             <div class="container-explore">
-                <div class="card-explore">
+                <div class="card-explore" v-for="jumbo in jumboExplore" :key="jumbo.id">
                     <div class="explore-img">
-                        <img src="/img/home-business-service-slide-01-480x298.jpg" alt="">
+                        <img :src="`/img/${jumbo.img}`" alt="">
                     </div>
-                    <h3>Consultative training</h3>
-                    <p>With a coach addressing multiple issues</p>
-                    <p>that are off balance, affecting your</p>
-                    <p class="pb-30">business in various unconsidered ways</p>
-                    <div class="discover-now">
-                        Discover now ->
-                    </div>
-                </div>
-                 <div class="card-explore">
-                    <div class="explore-img">
-                        <img src="/img/home-business-service-slide-02-480x298.jpg" alt="">
-                    </div>
-                    <h3>Real Deal Coaching</h3>
-                    <p>Bring an exceptionally powerful</p>
-                    <p>opportunity. Being able to accept, to work</p>
-                    <p class="pb-30">with that opportunity</p>
-                    <div class="discover-now">
-                        Discover now ->
-                    </div>
-                </div>
-                <div class="card-explore">
-                    <div class="explore-img">
-                        <img src="/img/home-business-service-slide-03-480x298.jpg" alt="">
-                    </div>
-                    <h3>Advisor Training Program</h3>
-                    <p>Getting high quality, entrepreneur mindset</p>
-                    <p>driven online business coaching, is what is</p>
-                    <p class="pb-30">needed</p>
+                    <h3>{{jumbo.title}}</h3>
+                    <p>{{jumbo.text1}}</p>
+                    <p>{{jumbo.text2}}</p>
+                    <p class="pb-30">{{jumbo.text3}}</p>
                     <div class="discover-now">
                         Discover now ->
                     </div>
@@ -56,7 +32,9 @@ import TextBigDream from './TextBigDream.vue'
 
 export default {
   components: { TextBigDream, HelpYou },
-    
+    props:{
+        jumboExplore:Array
+    }
 }
 </script>
 
