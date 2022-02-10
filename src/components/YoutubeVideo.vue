@@ -8,25 +8,55 @@
                 <img src="/img/icon-youtube-play.png" alt="">
             </div>
         </div>
+        <div class="good-plan">
+            <h1>To Thrive in Business</h1>
+            <h1>Today, You''ll Need a </h1>
+            <h1>Good Plan</h1>
+            <div class="answer">
+                <h4 @click="flag(change)" class="pb-20">How can we help?</h4>
+            </div>
+            <div class="response" v-if="change">
+                <p >How many courses you-ve been on, using however many techniques</p>
+                <p>and methods. Unless you've come to realize the value of mindset, then</p>
+                <p class="pb-20">you've to understand how success comes</p>
+                <p>With everyone else's mindset involved impacting too, Hence why</p>
+                <p class="pb-20">business coaching is so crucial for success</p>
+            </div>
+             <div class="hr "></div>
+             <h4 class="pt-20 pb-20">Why would i need a business COACH?</h4>
+             <div class="hr "></div>
+             <h4 class="pt-20">What is one-on-one coaching?</h4>
+        </div>
     </div>
 </template>
 
 <script>
 export default {
-    
+    data(){
+        return{
+            change:true
+        }
+    },
+    methods:{
+        flag(){ 
+            this.change= !this.change
+        }
+    }
 }
 </script>
 
 <style lang="scss" scoped>
 @import '@/../style/variables.scss';
+ @import './style/main.scss';
 .youtube{
     background-color:  $charade; 
     height: 600px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    // justify-content: center;
     .video{
         position: relative;
+        margin-left: 120px;
         .content-video{
             width: 450px;
             height: 300px;
@@ -49,6 +79,34 @@ export default {
                 height: 100%;
             }
         }
+    }
+    .good-plan{
+        display: flex;
+        flex-direction: column;
+        padding-left: 60px;
+        h4{
+            color: $white;
+        }
+        h1{
+            color: $white;
+        }
+        p{
+            color: $white;
+        }
+        .hr{
+            border-bottom: 1px solid $white;
+            width: 650px;
+        }
+        .answer{
+            display: flex;
+            gap: 15px;
+            padding-top: 30px;
+            h4{
+                color: $mountain-meadow;
+                cursor: pointer;
+            }
+        }
+        
     }
 }
 </style>
