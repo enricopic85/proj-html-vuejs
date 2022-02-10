@@ -108,7 +108,8 @@ export default {
           link3:'Privacy policy',
           link4:'Terms of service'
         },
-      ]
+      ],
+     
     }
   },
   
