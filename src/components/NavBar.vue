@@ -80,6 +80,7 @@ export default {
                      display: flex;
                     align-items: center;
                      padding-top: 20px;
+                     
                 }
                 .flag{
                     padding-right: 5px;
@@ -94,7 +95,7 @@ export default {
                 align-items: center;
                 border-right: 1px solid $porcelain;
                 height: 80px;
-                padding-bottom: 10px;
+                
                 .flag{
                     padding-right: 5px;
                 }

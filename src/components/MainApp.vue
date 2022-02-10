@@ -4,6 +4,7 @@
          <offered-services :cardsService="cardsService"/>
          <program-coach/>
          <jumbotron-explore/>
+         <price-services/>
     </div>
 </template>
 
@@ -12,8 +13,9 @@ import Jumbotron from './Jumbotron.vue'
 import OfferedServices from './OfferedServices.vue'
 import ProgramCoach from './ProgramCoach.vue'
 import JumbotronExplore from './JumbotronExplore.vue'
+import PriceServices from './PriceServices.vue'
 export default {
-    components:{Jumbotron, OfferedServices, ProgramCoach,JumbotronExplore},
+    components:{Jumbotron, OfferedServices, ProgramCoach,JumbotronExplore,PriceServices},
     props:{
         cardsService:Array
     }

@@ -1,8 +1,8 @@
 <template>
     <div class="jumbotron-explore">
         <div class="explore">
-            <h4>Let's Dream Big Together</h4>
-            <h2>Explore How can I help you</h2>
+            <text-big-dream/>
+            <help-you/>
             <div class="container-explore">
                 <div class="card-explore">
                     <div class="explore-img">
@@ -51,8 +51,11 @@
 </template>
 
 <script>
+import HelpYou from './HelpYou.vue'
+import TextBigDream from './TextBigDream.vue'
 
 export default {
+  components: { TextBigDream, HelpYou },
     
 }
 </script>
@@ -66,7 +69,7 @@ export default {
         .shot{
             display: flex;
             gap: 40px;
-            padding-left: 675px;
+            padding-left: 620px;
             .shot-black{
                 width: 10px;
                 height: 10px;
@@ -82,11 +85,6 @@ export default {
                 }
         .explore{
             text-align: center;
-             padding-top: 50px;
-           h4{
-            color: $jungle-green;
-            padding-bottom: 15px;
-           }
         }
         .container-explore{
             padding-top: 30px;
@@ -95,6 +93,7 @@ export default {
             display: flex;
             gap: 30px;
             justify-content: center;
+            width: 1270px;
             
             .card-explore{
                 width: 350px;

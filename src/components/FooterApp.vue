@@ -26,6 +26,9 @@
         <div class="copy">
             <i class="far fa-copyright"></i> 2020 Maxcoach. All Rights Reserved
         </div>
+        <div class="arrow-up">
+            <i class="fas fa-arrow-up"></i>
+        </div>
     </div>
 </template>
 
@@ -43,6 +46,21 @@ export default {
         width: 100%;
         height: 300px;
         background-color: $tuna;
+        position: relative;
+        .arrow-up{
+            color: $white;
+            background-color: $mountain-meadow ;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            font-size: 28px;
+            top: 201px;
+            right: 34px;
+        }
         .copy{
             color: $white;
             font-size: 12px;

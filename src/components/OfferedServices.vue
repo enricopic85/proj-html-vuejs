@@ -1,7 +1,7 @@
 <template>
     <div class="offered-services">
         <div class="dream">
-            <h4 class="dreams">Let's Dream Big Together</h4>
+            <text-big-dream/>
             <h2 class="tac">We are pioneers of the digital approach, using leading-edge</h2>
             <h2 class="tac">technology to simplify procedures and apply executive</h2>
             <h2 class="tac">coaching in the new age of digitalization</h2>
@@ -25,11 +25,13 @@
 
 <script>
 import ButtonCta from './ButtonCta.vue'
+import TextBigDream from './TextBigDream.vue'
 
 export default {
-    components:{ButtonCta , },
+    components:{ButtonCta ,TextBigDream },
     props:{
-        cardsService:Array
+   
+             cardsService:Array
     }
 }
 </script>
@@ -58,12 +60,12 @@ export default {
         }
        
         .dream{
-            .dreams{
-            padding-top: 50px;
-            color: $jungle-green;
-            text-align: center;
-            padding-bottom: 15px;
-        }
+        //     .dreams{
+        //     padding-top: 50px;
+        //     color: $jungle-green;
+        //     text-align: center;
+        //     padding-bottom: 15px;
+        // }
         }
         
         .services{
@@ -73,7 +75,7 @@ export default {
             column-gap: 60px;
             row-gap: 50px;
             padding-bottom: 30px;
-            padding-left: 208px;
+            padding-left: 140px;
             .card-service{
                 width: 321px;
             }
