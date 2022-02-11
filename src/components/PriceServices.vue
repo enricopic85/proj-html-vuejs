@@ -8,6 +8,8 @@
             <card-price-3/>
             <card-price-4/>
         </div>
+        <p class="tac pt-50 pb-15">Take the control of their life back and start doing things to make their</p>
+        <p class="tac  ">dream come true. <b class="tac">View all courses &#8594;</b></p>  
     </div>
 </template>
 
@@ -28,12 +30,13 @@ export default {
 @import '@/../style/cardPrice.scss';
     .price-services{
         width: 100%;
-        height: 600px;
+        height: 700px;
        .container-price{
            display: flex;
            padding-top: 30px;
            justify-content: center;
            gap: 30px;
+           padding-left: 93px;
         }
     }
 </style>

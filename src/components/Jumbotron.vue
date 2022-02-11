@@ -43,8 +43,9 @@ export default {
         display: flex;
         align-items: center;
         position: relative;
+        justify-content: center;
         .started-today{
-            padding-left: 300px;
+           
             padding-right: 100px;
             h4{
                 color: $jungle-green;

@@ -13,7 +13,7 @@
             <h1>Today, You''ll Need a </h1>
             <h1>Good Plan</h1>
             <div class="answer">
-                <h4 @click="flag(change)" class="pb-20">How can we help?</h4>
+                <h4 @click="flag(change)" class="pb-20"> <i class="fas fa-arrow-circle-down"></i> How can we help? </h4>
             </div>
             <div class="response" v-if="change">
                 <p >How many courses you-ve been on, using however many techniques</p>
@@ -23,9 +23,12 @@
                 <p class="pb-20">business coaching is so crucial for success</p>
             </div>
              <div class="hr "></div>
-             <h4 class="pt-20 pb-20">Why would i need a business COACH?</h4>
+             <h4 class="pt-20 pb-20"> <i class="fas fa-arrow-circle-down "></i> Why would i need a business COACH?</h4>
              <div class="hr "></div>
-             <h4 class="pt-20">What is one-on-one coaching?</h4>
+             <h4 class="pt-20"> <i class="fas fa-arrow-circle-down "></i>    What is one-on-one coaching?</h4>
+        </div>
+        <div class="square">
+            <img src="/img/maxcoach-shape-07.png" alt="">
         </div>
     </div>
 </template>
@@ -53,10 +56,25 @@ export default {
     height: 600px;
     display: flex;
     align-items: center;
-    // justify-content: center;
+    background-image: url('/img/background-map-dots-top-right-transparent.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+    justify-content: center;
+    .square{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        z-index: 1;
+        img{
+            width: 100%;
+        }
+    }
     .video{
         position: relative;
         margin-left: 120px;
+        z-index: 2;
+         
         .content-video{
             width: 450px;
             height: 300px;
@@ -84,6 +102,12 @@ export default {
         display: flex;
         flex-direction: column;
         padding-left: 60px;
+        i{
+                &:hover{
+                     transform: rotate(180deg);
+                   transition: 2s;
+                }
+            }
         h4{
             color: $white;
         }
@@ -104,6 +128,12 @@ export default {
             h4{
                 color: $mountain-meadow;
                 cursor: pointer;
+            }
+            i{
+               &:hover{
+                   transform: rotate(180deg);
+                   transition: 2s;
+               }
             }
         }
         

@@ -11,9 +11,11 @@
      padding-left: 20px;
      padding-bottom: 20px;
      &:hover{
+         opacity: 0.9;
          .hover{
              display: block;
          }
+         
          .price{
              top: 203px;
          }
@@ -65,7 +67,10 @@
     }
     
 }
-.card-price1,.card-price4{
+.card-price1{
+    background-image: url('/img/course-02-443x600.jpg');
+}
+.card-price4{
     background-image: url('/img/stock-full-hd-03-443x600.jpg');
  }
 .card-price2{

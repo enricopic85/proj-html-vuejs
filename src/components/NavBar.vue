@@ -73,13 +73,13 @@ export default {
             .modal-language{
                 display: flex;
                 position: absolute;
-                top:40px;
+                top:55px;
                 z-index: 1;
                 flex-direction: column;
                 .language-card{
                      display: flex;
                     align-items: center;
-                     padding-top: 20px;
+                    padding-top: 20px;
                      
                 }
                 .flag{

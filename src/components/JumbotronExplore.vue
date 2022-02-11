@@ -13,7 +13,7 @@
                     <p>{{jumbo.text2}}</p>
                     <p class="pb-30">{{jumbo.text3}}</p>
                     <div class="discover-now">
-                        Discover now ->
+                        Discover now &#8702;
                     </div>
                 </div>
             </div>
@@ -47,7 +47,8 @@ export default {
         .shot{
             display: flex;
             gap: 40px;
-            padding-left: 620px;
+            padding-left: 13px;
+            justify-content: center;
             .shot-black{
                 width: 10px;
                 height: 10px;
@@ -66,13 +67,13 @@ export default {
         }
         .container-explore{
             padding-top: 30px;
-            padding-left: 110px;
+            padding-left: 100px;
             padding-bottom: 30px;
             display: flex;
             gap: 30px;
             justify-content: center;
             width: 1270px;
-            
+            margin: 0 auto;
             .card-explore{
                 width: 350px;
                 height: 400px;

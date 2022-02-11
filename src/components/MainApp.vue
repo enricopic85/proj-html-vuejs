@@ -2,27 +2,32 @@
     <div>
          <jumbotron/>
          <offered-services 
-         :cardsService="cardsService"/>
-         <program-coach/>
+            :cardsService="cardsService"
+         />
          <jumbotron-explore
-         :jumboExplore="jumboExplore"/>
+            :jumboExplore="jumboExplore"
+         />
          <price-services/>
          <youtube-video/>
+         <upcoming-events
+            :events="events"
+         />
     </div>
 </template>
 
 <script>
 import Jumbotron from './Jumbotron.vue'
 import OfferedServices from './OfferedServices.vue'
-import ProgramCoach from './ProgramCoach.vue'
 import JumbotronExplore from './JumbotronExplore.vue'
 import PriceServices from './PriceServices.vue'
 import YoutubeVideo from './YoutubeVideo.vue'
+import UpcomingEvents from './UpcomingEvents.vue'
 export default {
-    components:{Jumbotron, OfferedServices, ProgramCoach,JumbotronExplore,PriceServices, YoutubeVideo},
+    components:{Jumbotron, OfferedServices,JumbotronExplore,PriceServices, YoutubeVideo, UpcomingEvents},
     props:{
         cardsService:Array,
-        jumboExplore:Array
+        jumboExplore:Array,
+        events:Array
     }
 }
 </script>

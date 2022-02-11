@@ -69,13 +69,15 @@ export default {
         }
         .footer-flex{
             display: flex;
+            justify-content: center;
+            padding-right: 219px;
             .address{
             color: $white;
             display: flex;
             flex-direction: column;
             padding-top: 50px;
             gap: 20px;
-            padding-left: 200px;
+            padding-left: 270px;
             padding-right: 150px;
             p{
                 font-size: 12px;

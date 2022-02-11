@@ -5,7 +5,8 @@
     :languages="languages"/>
     <main-app
     :cardsService="cardsService"
-    :jumboExplore="jumboExplore" />
+    :jumboExplore="jumboExplore"
+    :events="events" />
     <footer-app :listFooter="listFooter"/>
   </div>
 </template>
@@ -136,6 +137,50 @@ export default {
          text3:'needed'
        },
 
+     ],
+     events:[
+       {
+         id:1,
+         location:'Texas, US',
+         title:'Storytelling Workshop',
+         day:'22',
+         month:'NOV'
+       },
+       {
+         id:2,
+         location:'New York, US',
+         title:'Painting Art Contest 2020',
+         day:'10',
+         month:'OCT'
+       },
+       {
+         id:3,
+         location:'Hambur, Germany',
+         title:'International Art Fair 2020',
+         day:'23',
+         month:'NOV'
+       },
+       {
+         id:4,
+         location:'Illinois, US',
+         title:'Street Performance: Call for Artist',
+         day:'15',
+         month:'DEC'
+       },
+       {
+         id:5,
+         location:'Illinois, US',
+         title:'Consumer Food Safety Education Conference',
+         day:'22',
+         month:'JUL'
+       },
+       {
+         id:6,
+         location:'Dubai',
+         title:'How meditation improve your mental health?',
+         day:'12',
+         month:'AUG'
+       },
      ]
     }
   },
